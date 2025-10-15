@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&family=Comic+Neue:wght@700&display=swap');
+
+.single-container {
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ffe6cc, #fff0f5, #ccf2ff, #eaffd0);
+  color: #333;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Cairo', 'Comic Neue', cursive;
+  overflow: hidden;
+}
+
+/* Card */
+.single-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 35px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  border: 2px solid #ffb6b9;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1.2s ease-out both;
+}
+
+.single-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 45px rgba(255, 182, 185, 0.3);
+}
+
+/* Image */
+.student-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffde7d;
+  box-shadow: 0 8px 25px rgba(255, 182, 185, 0.4);
+  background: #fff8f8;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.student-img:hover {
+  transform: scale(1.08) rotate(4deg);
+  box-shadow: 0 12px 35px rgba(255, 200, 150, 0.5);
+}
+
+/* Info section */
+.student-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.student-name {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #ff6f61;
+  text-shadow: 2px 2px #ffd1c1;
+  margin-bottom: 10px;
+}
+
+.student-info p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.student-info span {
+  color: #3b3b98;
+  font-weight: 700;
+}
+
+/* Button */
+.back-btn {
+  background: linear-gradient(135deg, #ffb6b9, #ffde7d);
+  color: #000;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Comic Neue', cursive;
+}
+
+.back-btn:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .single-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .student-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .student-name {
+    font-size: 1.9rem;
+  }
+
+  .student-info p {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .single-card {
+    padding: 22px;
+  }
+
+  .student-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .student-name {
+    font-size: 1.5rem;
+  }
+
+  .student-info p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,158 @@
+.course-list-container {
+  position: relative;
+  direction: rtl; /* Arabic layout */
+  padding: 5rem 2rem 0 2rem;
+  text-align: right;
+  min-height: 100vh;
+  background: #f5f7fa; /* soft blue-gray background */
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Larger screens padding */
+@media (min-width: 768px) {
+  .course-list-container {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+/* Header */
+.course-list-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* On wider screens, side-by-side layout */
+@media (min-width: 768px) {
+  .course-list-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Title */
+.course-list-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #1e3a8a; /* deep blue */
+  margin: 0;
+  text-shadow: 0 0 6px rgba(30, 58, 138, 0.2);
+}
+
+/* Breadcrumb */
+.course-list-breadcrumb {
+  color: #64748b; /* slate gray */
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.breadcrumb-home {
+  color: #d4af37; /* gold accent */
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-home:hover {
+  color: #facc15; /* brighter gold */
+}
+
+/* Grid for cards */
+.course-list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 3rem 0;
+  padding: 0 0.5rem;
+}
+
+/* Responsive grid layout */
+@media (min-width: 600px) {
+  .course-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .course-list-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-list-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Subtle fade-in animation */
+.course-list-grid > * {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Search info box */
+.search-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #cbd5e1; /* light gray-blue border */
+  margin: 2rem 0;
+  color: #1e293b; /* dark gray-blue text */
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(30, 58, 138, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.search-info:hover {
+  background-color: #fefce8; /* pale gold background */
+  border-color: #d4af37;
+  color: #1e3a8a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.15);
+}
+
+/* Small cross button or icon */
+.cross {
+  cursor: pointer;
+  color: #d4af37;
+  font-weight: bold;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.cross:hover {
+  transform: rotate(90deg);
+  color: #facc15; /* lighter gold */
+}
+
+/* Responsive typography and padding tweaks */
+@media (max-width: 480px) {
+  .course-list-title {
+    font-size: 1.6rem;
+  }
+
+  .course-list-breadcrumb {
+    font-size: 0.9rem;
+  }
+
+  .search-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
