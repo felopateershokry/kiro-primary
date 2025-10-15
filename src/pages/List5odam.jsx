@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { dummyKhodam } from "../assets/assets";
 import Card5odam from "../components/Card5odam";
-import './ListPage.css'
+import './listPage.css'
 
 function List5odam() {
     const navigate = useNavigate();
