@@ -1,14 +1,14 @@
-import logo from './im2.png'
-import logo2 from './im3.jpeg'
+import logo from './IMG-20251023-WA0006.jpg'
 import home from './im1.jpg'
-import logo3 from './im4.jpeg'
+import karasyousef from './karasyousef.jpg'
+import karasmores from './karasmores.jpg'
+import kirogeorge from './kirogeorge.jpg'
+import markezzat from './markezzat.jpg'
 
 
 export const assets = {
     logo,
     home,
-    logo2,
-    logo3
 }
 
 // export const dummyEducatorData = {
@@ -121,7 +121,7 @@ export const dummyKhodam = [
             "imageUrl" : "https://scontent.fcai19-8.fna.fbcdn.net/v/t39.30808-1/503983540_3894744670672115_8715881428891033994_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGQYK0WzHckuGhvoP0NaiiZAwBOLWkcof4DAE4taRyh_qI-xL5LfdZWKFlbq3Q01MzOGozdN90NX_bqnA7Qp-Ai&_nc_ohc=HEo2uYTPhjoQ7kNvwEsOtlF&_nc_oc=AdklVy6CYgbymYcZcYTIa6qZEAVc3a864U0wZw8NoD4OShLHPk_Z9MlnYeKGDibb5rs&_nc_zt=24&_nc_ht=scontent.fcai19-8.fna&_nc_gid=2gJ5PnJKevYHB3DVoYUibA&oh=00_Afcp7cfLWDFT5MAibXKqmc1g_N3su8j-FSG3V1wzXYT_NA&oe=68FFCAB4",
             "phone": "01280511848",
             "address": "Alexandria, Egypt",
-            "notes" : "امين الخدمة",
+            "notes": "امين الخدمة",
         },
     },
     {
@@ -178,7 +178,7 @@ export const dummyData = [
         "student": {
             "_id": "1",
             "name": "كاراس يوسف",
-            "imageUrl": home,
+            "imageUrl": karasyousef,
             "address": "Alexandria, Egypt",
             "date": "2016/2/13",
             "mobile" : "01286796193",
@@ -208,7 +208,7 @@ export const dummyData = [
         "student": {
             "_id": "4",
             "name": "مارك عزت",
-            "imageUrl": home,
+            "imageUrl": markezzat,
             "address": "Alexandria, Egypt",
             "date": "2016/5/13",
             "mobile" : "01200330082",
@@ -248,7 +248,7 @@ export const dummyData = [
         "student": {
             "_id": "8",
             "name": "كاراس موريس",
-            "imageUrl": home,
+            "imageUrl": karasmores,
             "address": "Alexandria, Egypt",
             "date": "2017/8/6",
             "mobile" : "01228931881",
@@ -278,7 +278,7 @@ export const dummyData = [
         "student": {
             "_id": "11",
             "name": "كيرلس جورج",
-            "imageUrl": home,
+            "imageUrl": kirogeorge,
             "address": "Alexandria, Egypt",
             "date": "2017/9/13",
             "mobile" : "01207318208",

@@ -13,6 +13,9 @@
   overflow: hidden;
   position: relative;
 }
+img{
+  border-radius: 60px;
+}
 
 /* Titles */
 .title {
@@ -30,14 +33,14 @@
 
 /* Logo Image */
 .home-image img {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 200px;
   object-fit: contain;
-  border-radius: 50%;
-  background: #ffffffcc;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-  padding: 15px;
-  transition: transform 0.4s ease;
+  /* border-radius: 50%; */
+  /* background: transparent; */
+  /* box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  padding: 15px;*/
+  transition: transform 0.4s ease; 
 }
 
 .home-image img:hover {
