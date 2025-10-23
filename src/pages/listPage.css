@@ -6,6 +6,7 @@
   min-height: 100vh;
   background: #f5f7fa; /* soft blue-gray background */
   font-family: 'Cairo', sans-serif;
+  padding-bottom: 50px;
 }
 
 /* Larger screens padding */

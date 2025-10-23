@@ -30,7 +30,7 @@ const SinglePage = () => {
                 />
                 <div className="student-info">
                 <h1 className="student-name">{studentData.name}</h1>
-                {/* <p><span> الهاتف:</span> {studentData.phone}</p> */}
+                <p><span> الهاتف:</span> {studentData.mobile}</p>
                 <p><span> العنوان:</span> {studentData.address}</p>
                 <p><span> تاريخ الميلاد:</span> {studentData.date}</p>
 
